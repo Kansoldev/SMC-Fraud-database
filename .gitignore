@@ -1,0 +1,15 @@
+# Dependencies
+/node_modules
+
+# next.js
+/.next/
+
+# production
+/build
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
