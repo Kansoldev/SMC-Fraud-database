@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Tablist = ({ tabsData }) => {
+const Tablist = ({ tabsData: [] }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
