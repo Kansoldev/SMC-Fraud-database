@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </header>
 
-      <main className="container mx-auto text-center mt-5">
+      <main className="container mx-auto mt-5">
         <Image
           src="/logo.png"
           alt="SMC logo"
@@ -39,17 +39,19 @@ const Home = () => {
           height={120}
         />
 
-        <h1 className="font-bold text-2xl mb-10 capitalize">
-          SMC DAO Fraud Alert Database
+        <h1 className="font-bold text-2xl mb-10 capitalize text-center ">
+          SMC Intelligence
         </h1>
 
-        <input
-          type="search"
-          name=""
-          id=""
-          placeholder="Search name, twitter handle, wallet address, phone number etc"
-          className="w-[800px] max-w-full p-4 border-0 outline-0 rounded-[30px] shadow-lg mx-4"
-        />
+        <div className="search-container flex flex-col w-[800px] mx-auto">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search name, social media handle, wallet address, phone number etc"
+            className="w-full p-4 border-0 outline-0 rounded-[30px] shadow-lg mx-4"
+          />
+        </div>
 
         <section>
           <div className="w-full xl:w-10/12 mb-12 xl:mb-0 px-4 mx-auto mt-10">
@@ -109,15 +111,15 @@ const Home = () => {
                 </table>
               </div>
             </div>
-
-            <Link
-              href="/add"
-              className="bg-white text-black px-6 py-3 rounded-lg font-semibold float-right"
-            >
-              + Add New Record
-            </Link>
           </div>
         </section>
+
+        <Link
+          href="/add"
+          className="bg-white text-black px-6 py-3 mt-7 inline-block rounded-lg font-semibold ml-auto"
+        >
+          + Add New Profile
+        </Link>
       </main>
     </>
   );

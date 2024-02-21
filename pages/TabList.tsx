@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const Tablist = ({ tabsData: [] }) => {
+const Tablist = ({ tabsData }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <div className="bg-white rounded-md p-4">
+    <div className="bg-white p-4">
       <ul className="flex border-b border-gray-200">
         {tabsData.map((tab, index) => (
           <li
