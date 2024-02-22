@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -39,9 +40,12 @@ const Login = () => {
             />
           </div>
 
-          <button className="bg-black hover:bg-neutral-800 text-white px-4 py-3 shadow w-full text-lg">
+          <Link
+            href="/verify"
+            className="block bg-black hover:bg-neutral-800 text-white px-4 py-3 shadow w-full text-lg text-center"
+          >
             Continue
-          </button>
+          </Link>
         </form>
       </div>
     </div>
