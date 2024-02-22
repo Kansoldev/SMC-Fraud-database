@@ -20,12 +20,7 @@ const Login = () => {
           height={120}
         />
         <h1 className="font-bold text-2xl text-center mb-8">SMC DAO</h1>{" "}
-        <form
-          id="contact-form"
-          className="contact-form mt-30 mb-30"
-          method="post"
-          action="/verify"
-        >
+        <div id="contact-form" className="contact-form mt-30 mb-30">
           <div className="form-group flex items-center gap-2 mb-8">
             <label htmlFor="email" hidden>
               Email
@@ -46,7 +41,7 @@ const Login = () => {
           >
             Continue
           </Link>
-        </form>
+        </div>
       </div>
     </div>
   );
