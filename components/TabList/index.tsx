@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Tablist = ({
+const TabList = ({
   tabsData,
 }: {
   tabsData: { title: string; content: JSX.Element }[];
@@ -30,4 +30,4 @@ const Tablist = ({
   );
 };
 
-export default Tablist;
+export default TabList;

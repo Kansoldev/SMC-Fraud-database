@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TabList from "./TabList";
+import TabList from "@/components/TabList";
 
 const profile = () => {
   const tabsData = [
@@ -332,7 +332,7 @@ const profile = () => {
                 </Link>
                 <Link href="/" className="text-blue-500 underline">
                   Images
-                </Link>
+                </Link> 
                 <Link href="/" className="text-blue-500 underline">
                   Audio
                 </Link>
