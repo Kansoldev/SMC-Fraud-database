@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Verify = () => {
   return (
@@ -19,12 +20,7 @@ const Verify = () => {
           height={120}
         />
         <h1 className="font-bold text-2xl text-center mb-8">SMC DAO</h1>{" "}
-        <form
-          id="contact-form"
-          className="contact-form mt-30 mb-30"
-          method="post"
-          action="/home"
-        >
+        <div id="contact-form" className="contact-form mt-30 mb-30">
           <span className="text-center block mb-4 bg-green-600 text-white p-2">
             Verify OTP sent to your email address
           </span>
@@ -43,10 +39,13 @@ const Verify = () => {
             />
           </div>
 
-          <button className="bg-black hover:bg-neutral-800 text-white px-4 py-3 shadow w-full text-lg">
+          <Link
+            href="/home"
+            className="block bg-black hover:bg-neutral-800 text-white px-4 py-3 shadow w-full text-lg text-center"
+          >
             Login
-          </button>
-        </form>
+          </Link>
+        </div>
       </div>
     </div>
   );
